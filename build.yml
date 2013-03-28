@@ -12,9 +12,7 @@ copyContents:
     # "$buildPath/test":      "$buildPath/project"
 
 packageContents:
-    #used to specify what is to be packaged and the package names
-    #source folder or file: package name
-    # "$buildPath/project":  "project.zip"
+    "$buildPath/_PublishedWebsites/ydeliver-mvc4/*":  "web.zip"
 
 nugetSpecs:     #[project.nuspec]
     #used to specify the nuspecs to create packages out of
