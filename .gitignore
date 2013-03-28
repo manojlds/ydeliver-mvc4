@@ -86,6 +86,8 @@ UpgradeLog*.XML
 *.ldf
 *.mdf
 
+build/
+
 ############
 ## Windows
 ############
