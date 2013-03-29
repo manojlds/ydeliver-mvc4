@@ -1,0 +1,12 @@
+conventions:
+    artifactsDir: "$rootDir/build"
+
+install:
+    ydeliver-mvc4: 
+        tasks:
+            web:
+                config:
+                    siteName:   "ydeliver-mvc4"
+                    sitePath:   "C:/public/ydeliver-mvc4"
+                    appPool:    "ydeliver-mvc4"
+                    artifact:   "web.zip"
