@@ -11,3 +11,7 @@ install:
                     appPool:    "ydeliver-mvc4"
                     bindings:    "http/*:80:dev.ydeliver.com"
                     artifact:   "web.zip"
+
+                spliceMap:
+                    Web.config:
+                        "//configuration/appSettings/add[@key='MiniProfilerEnabled']/@value": "false"
