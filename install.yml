@@ -7,6 +7,7 @@ install:
             web:
                 config:
                     siteName:   "ydeliver-mvc4"
-                    sitePath:   "C:/public/ydeliver-mvc4"
+                    sitePath:   "C:\\public\\ydeliver-mvc4"
                     appPool:    "ydeliver-mvc4"
+                    bindings:    "http/*:80:dev.ydeliver.com"
                     artifact:   "web.zip"
