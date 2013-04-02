@@ -7,7 +7,9 @@ roles:
         applications:
             ydeliver-mvc4:
                 config:
-        projects:
-            teamcity-project-id:    bt1
-                artifacts:              ["web.zip"]
+        artifacts:
+            web.zip:
+                teamcity-build-id:   "bt2"
+                auth:                "guest"
+
         servers:        ["localhost"]
