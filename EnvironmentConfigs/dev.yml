@@ -1,0 +1,13 @@
+#common environment configuration
+config:
+
+
+roles:
+    web:
+        applications:
+            ydeliver-mvc4:
+                config:
+        projects:
+            teamcity-project-id:    bt1
+                artifacts:              ["web.zip"]
+        servers:        ["localhost"]
