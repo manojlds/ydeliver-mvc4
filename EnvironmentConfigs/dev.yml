@@ -1,6 +1,5 @@
-#common environment configuration
 config:
-
+    teamcity-server:    "http://localhost:8153"
 
 roles:
     web:
@@ -9,7 +8,10 @@ roles:
                 config:
         artifacts:
             web.zip:
-                teamcity-build-id:   "bt2"
-                auth:                "guest"
+                teamcity-build-id:  "bt2"
+                # path: "C:\\artifacts"
 
-        servers:        ["localhost"]
+        servers:    ["localhost"]
+        # credential:
+        #     username:   "$env:ENV_USER_NAME"
+        #     password:   "$env:ENV_PASSWORD"
