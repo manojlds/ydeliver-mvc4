@@ -1,5 +1,6 @@
 config:
     teamcity-server:    "http://localhost:8153"
+    go-server:  "http://localhost:8153"
 
 roles:
     web:
@@ -8,7 +9,12 @@ roles:
                 config:
         artifacts:
             web.zip:
-                teamcity-build-id:  "bt2"
+                teamcity:
+                    build-id:  "bt2"
+                go:
+                    pipeline:   "ydeliver-mvc4"
+                    stage:      "build"
+                    job:        "build"
                 # path: "C:\\artifacts"
 
         servers:    ["localhost"]
